@@ -48,16 +48,36 @@ class ForgotPasswordController: UIViewController {
         return view
     }()
     
+    func validLogin(myLogin: String) -> Bool
+        {
+            let login =  ("[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}")
+            let loginTesting = NSPredicate(format: "SELF MATCHES %@", login)
+            return loginTesting.evaluate(with: myLogin)
+        }
+    
     @objc func clickLogin(view: UIButton){
+        let login = validLogin(myLogin: loginfield.text!)
+        if login  {
         let alert = UIAlertController(title: "успешно", message: "отправлено", preferredStyle: .alert)
         
         let okAction = UIAlertAction(title: "OK", style: .default) {
                       UIAlertAction in
                       NSLog("OK Pressed")
         self.navigationController?.pushViewController(ViewController(), animated: true)
+            print("test")
                   }
         alert.addAction(okAction)
-        self.present(alert, animated: true, completion: nil)
+            self.present(alert, animated: true, completion: nil)
+            
+        } else {
+            let alertController = UIAlertController(title: "Error", message: "make sure the text is correct", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "OK", style: .cancel)
+            alertController.addAction(alertAction)
+            
+            self.present(alertController, animated: true)
+           
+            
+        }
         
     }
     override func viewDidLoad() {
@@ -65,8 +85,8 @@ class ForgotPasswordController: UIViewController {
         
         view.addSubview(clickBack)
         clickBack.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(view.frame.width / 20)
-            make.left.equalToSuperview().offset(view.frame.width / 30)
+            make.top.equalToSuperview().offset(10)
+            make.left.equalToSuperview().offset(16)
         }
         
         view.addSubview(forgotlayout)
