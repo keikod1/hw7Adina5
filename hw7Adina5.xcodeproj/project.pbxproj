@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D4AC11265B9A6675790C948 /* Pods_hw7Adina5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E18E4C1DE78544688C84157 /* Pods_hw7Adina5.framework */; };
 		E4650B7827A3CECD00AF4600 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4650B7727A3CECD00AF4600 /* AppDelegate.swift */; };
 		E4650B7A27A3CECD00AF4600 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4650B7927A3CECD00AF4600 /* SceneDelegate.swift */; };
 		E4650B7C27A3CECD00AF4600 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4650B7B27A3CECD00AF4600 /* ViewController.swift */; };
 		E4650B7F27A3CECD00AF4600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4650B7D27A3CECD00AF4600 /* Main.storyboard */; };
 		E4650B8127A3CEE200AF4600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4650B8027A3CEE200AF4600 /* Assets.xcassets */; };
 		E4650B8427A3CEE200AF4600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4650B8227A3CEE200AF4600 /* LaunchScreen.storyboard */; };
+		E49C0E6627B6113A00DD5ECA /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49C0E6527B6113A00DD5ECA /* MessagesController.swift */; };
+		E4CCE31427B4075D007D19F3 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CCE31327B4075D007D19F3 /* MainController.swift */; };
+		E4CCE31627B4F16C007D19F3 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CCE31527B4F16C007D19F3 /* RegisterController.swift */; };
+		E4CCE31827B50657007D19F3 /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CCE31727B50657007D19F3 /* InfoController.swift */; };
+		E4CCE31A27B51256007D19F3 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CCE31927B51256007D19F3 /* ForgotPasswordController.swift */; };
+		E4CCE31C27B51A4E007D19F3 /* HelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CCE31B27B51A4E007D19F3 /* HelpController.swift */; };
+		E4CCE31E27B532C8007D19F3 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CCE31D27B532C8007D19F3 /* CustomTableViewCell.swift */; };
+		E4CCE32027B53361007D19F3 /* SecondCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CCE31F27B53361007D19F3 /* SecondCustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36C5DB1D77C0D26176280429 /* Pods-hw7Adina5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hw7Adina5.release.xcconfig"; path = "Target Support Files/Pods-hw7Adina5/Pods-hw7Adina5.release.xcconfig"; sourceTree = "<group>"; };
+		3E18E4C1DE78544688C84157 /* Pods_hw7Adina5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hw7Adina5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1DADDA7B8B9549287980F14 /* Pods-hw7Adina5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hw7Adina5.debug.xcconfig"; path = "Target Support Files/Pods-hw7Adina5/Pods-hw7Adina5.debug.xcconfig"; sourceTree = "<group>"; };
 		E4650B7427A3CECD00AF4600 /* hw7Adina5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hw7Adina5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4650B7727A3CECD00AF4600 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4650B7927A3CECD00AF4600 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +36,14 @@
 		E4650B8027A3CEE200AF4600 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4650B8327A3CEE200AF4600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4650B8527A3CEE200AF4600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E49C0E6527B6113A00DD5ECA /* MessagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
+		E4CCE31327B4075D007D19F3 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		E4CCE31527B4F16C007D19F3 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		E4CCE31727B50657007D19F3 /* InfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
+		E4CCE31927B51256007D19F3 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
+		E4CCE31B27B51A4E007D19F3 /* HelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpController.swift; sourceTree = "<group>"; };
+		E4CCE31D27B532C8007D19F3 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		E4CCE31F27B53361007D19F3 /* SecondCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D4AC11265B9A6675790C948 /* Pods_hw7Adina5.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F9F62F7589106B1D7A9DE04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1DADDA7B8B9549287980F14 /* Pods-hw7Adina5.debug.xcconfig */,
+				36C5DB1D77C0D26176280429 /* Pods-hw7Adina5.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D5A1C96ECBE66A6601470F2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E18E4C1DE78544688C84157 /* Pods_hw7Adina5.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E4650B6B27A3CECD00AF4600 = {
 			isa = PBXGroup;
 			children = (
 				E4650B7627A3CECD00AF4600 /* hw7Adina5 */,
 				E4650B7527A3CECD00AF4600 /* Products */,
+				8F9F62F7589106B1D7A9DE04 /* Pods */,
+				D5A1C96ECBE66A6601470F2F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,10 +99,18 @@
 				E4650B7727A3CECD00AF4600 /* AppDelegate.swift */,
 				E4650B7927A3CECD00AF4600 /* SceneDelegate.swift */,
 				E4650B7B27A3CECD00AF4600 /* ViewController.swift */,
+				E4CCE31327B4075D007D19F3 /* MainController.swift */,
 				E4650B7D27A3CECD00AF4600 /* Main.storyboard */,
 				E4650B8027A3CEE200AF4600 /* Assets.xcassets */,
 				E4650B8227A3CEE200AF4600 /* LaunchScreen.storyboard */,
 				E4650B8527A3CEE200AF4600 /* Info.plist */,
+				E4CCE31527B4F16C007D19F3 /* RegisterController.swift */,
+				E4CCE31727B50657007D19F3 /* InfoController.swift */,
+				E4CCE31927B51256007D19F3 /* ForgotPasswordController.swift */,
+				E4CCE31B27B51A4E007D19F3 /* HelpController.swift */,
+				E4CCE31D27B532C8007D19F3 /* CustomTableViewCell.swift */,
+				E4CCE31F27B53361007D19F3 /* SecondCustomCell.swift */,
+				E49C0E6527B6113A00DD5ECA /* MessagesController.swift */,
 			);
 			path = hw7Adina5;
 			sourceTree = "<group>";
@@ -74,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4650B8827A3CEE200AF4600 /* Build configuration list for PBXNativeTarget "hw7Adina5" */;
 			buildPhases = (
+				9AA265EC9287E5632CF007B5 /* [CP] Check Pods Manifest.lock */,
 				E4650B7027A3CECD00AF4600 /* Sources */,
 				E4650B7127A3CECD00AF4600 /* Frameworks */,
 				E4650B7227A3CECD00AF4600 /* Resources */,
+				1EBBE877C176161B10E97EDC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +183,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1EBBE877C176161B10E97EDC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hw7Adina5/Pods-hw7Adina5-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hw7Adina5/Pods-hw7Adina5-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hw7Adina5/Pods-hw7Adina5-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AA265EC9287E5632CF007B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hw7Adina5-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E4650B7027A3CECD00AF4600 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4CCE32027B53361007D19F3 /* SecondCustomCell.swift in Sources */,
+				E4CCE31E27B532C8007D19F3 /* CustomTableViewCell.swift in Sources */,
+				E4CCE31627B4F16C007D19F3 /* RegisterController.swift in Sources */,
+				E49C0E6627B6113A00DD5ECA /* MessagesController.swift in Sources */,
+				E4CCE31427B4075D007D19F3 /* MainController.swift in Sources */,
 				E4650B7C27A3CECD00AF4600 /* ViewController.swift in Sources */,
+				E4CCE31A27B51256007D19F3 /* ForgotPasswordController.swift in Sources */,
+				E4CCE31C27B51A4E007D19F3 /* HelpController.swift in Sources */,
 				E4650B7827A3CECD00AF4600 /* AppDelegate.swift in Sources */,
 				E4650B7A27A3CECD00AF4600 /* SceneDelegate.swift in Sources */,
+				E4CCE31827B50657007D19F3 /* InfoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +384,7 @@
 		};
 		E4650B8927A3CEE200AF4600 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1DADDA7B8B9549287980F14 /* Pods-hw7Adina5.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +413,7 @@
 		};
 		E4650B8A27A3CEE200AF4600 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36C5DB1D77C0D26176280429 /* Pods-hw7Adina5.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
