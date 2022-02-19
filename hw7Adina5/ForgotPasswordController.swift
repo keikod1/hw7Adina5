@@ -11,7 +11,6 @@ import SnapKit
 
 class ForgotPasswordController: UIViewController {
     private lazy var forgotlayout = UIView()
-    
     private lazy var loginfield: UITextField = {
         let view = UITextField()
         view.placeholder = "Email"
@@ -19,7 +18,6 @@ class ForgotPasswordController: UIViewController {
         view.textColor = .black
         return view
     }()
-    
     private lazy var titleForgot: UILabel = {
         let view = UILabel()
         view.textColor = .black
@@ -27,7 +25,6 @@ class ForgotPasswordController: UIViewController {
         view.text = "Forgot Password"
         return view
     }()
-    
     private lazy var loginButton: UIButton = {
         let view = UIButton()
         view.setTitle("отправить", for: .normal)
@@ -38,7 +35,6 @@ class ForgotPasswordController: UIViewController {
         view.layer.cornerRadius = 48 / 2
         return view
     }()
-    
     private lazy var clickBack: UIButton = {
         let view = UIButton()
         view.backgroundColor = .white
@@ -47,40 +43,33 @@ class ForgotPasswordController: UIViewController {
         view.addTarget(self, action: #selector(clickBack(sender:)), for: .touchUpInside)
         return view
     }()
-    
     func validLogin(myLogin: String) -> Bool
-        {
-            let login =  ("[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}")
-            let loginTesting = NSPredicate(format: "SELF MATCHES %@", login)
-            return loginTesting.evaluate(with: myLogin)
-        }
-    
+    {
+        let login =  ("[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}")
+        let loginTesting = NSPredicate(format: "SELF MATCHES %@", login)
+        return loginTesting.evaluate(with: myLogin)
+    }
     @objc func clickLogin(view: UIButton){
         let login = validLogin(myLogin: loginfield.text!)
         if login  {
-        let alert = UIAlertController(title: "успешно", message: "отправлено", preferredStyle: .alert)
-        
-        let okAction = UIAlertAction(title: "OK", style: .default) {
-                      UIAlertAction in
-                      NSLog("OK Pressed")
-        self.navigationController?.pushViewController(ViewController(), animated: true)
-            print("test")
-                  }
-        alert.addAction(okAction)
+            let alert = UIAlertController(title: "успешно", message: "отправлено", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default) {
+                UIAlertAction in
+                NSLog("OK Pressed")
+                self.navigationController?.pushViewController(ViewController(), animated: true)
+                print("test")
+            }
+            alert.addAction(okAction)
             self.present(alert, animated: true, completion: nil)
-            
         } else {
             let alertController = UIAlertController(title: "Error", message: "make sure the text is correct", preferredStyle: .alert)
             let alertAction = UIAlertAction(title: "OK", style: .cancel)
             alertController.addAction(alertAction)
-            
             self.present(alertController, animated: true)
-           
-            
         }
-        
     }
-    override func viewDidLoad() {
+    
+override func viewDidLoad() {
         view.backgroundColor = .white
         
         view.addSubview(clickBack)
@@ -88,7 +77,6 @@ class ForgotPasswordController: UIViewController {
             make.top.equalToSuperview().offset(10)
             make.left.equalToSuperview().offset(16)
         }
-        
         view.addSubview(forgotlayout)
         forgotlayout.snp.makeConstraints { make in
             make.centerY.equalToSuperview()

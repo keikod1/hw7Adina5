@@ -17,7 +17,6 @@ class SecondCustomCell: UITableViewCell{
         view.adjustsFontSizeToFitWidth = true
         return view
     }()
-    
     lazy var titlePhoto: UIImageView = {
         let view = UIImageView()
         view.image = .init(named: "tom-holland-1")
@@ -27,7 +26,7 @@ class SecondCustomCell: UITableViewCell{
         return view
     }()
     
-    override func layoutSubviews() {
+override func layoutSubviews() {
         addSubview(titlePhoto)
         titlePhoto.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(8)
@@ -35,15 +34,11 @@ class SecondCustomCell: UITableViewCell{
             make.height.equalToSuperview().dividedBy(1.5)
             make.width.equalTo(contentView.frame.width / 5)
         }
-        
         addSubview(title1)
         title1.snp.makeConstraints { make in
             make.left.equalTo(titlePhoto.snp.right).offset(16)
             make.centerY.equalToSuperview()
         }
-        
     }
-
-
-    }
+}
 

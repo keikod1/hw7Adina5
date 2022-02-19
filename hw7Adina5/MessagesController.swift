@@ -11,22 +11,18 @@ import SnapKit
 
 class MessagesController: UIViewController {
     
-    lazy var title1: UILabel = {
+    private lazy var title1: UILabel = {
         let view = UILabel()
         view.font = .systemFont(ofSize: 15, weight: .bold)
         view.adjustsFontSizeToFitWidth = true
         return view
     }()
-    
-    lazy var titlePhoto: UIImageView = {
+    private lazy var titlePhoto: UIImageView = {
         let view = UIImageView()
         view.image = .init(named: "tom-holland-1")
         view.layer.cornerRadius = 58/2
-        view.clipsToBounds = true
-        
         return view
     }()
-    
     private lazy var clickBack: UIButton = {
         let view = UIButton()
         view.backgroundColor = .white
@@ -35,7 +31,6 @@ class MessagesController: UIViewController {
         view.addTarget(self, action: #selector(clickBack(sender:)), for: .touchUpInside)
         return view
     }()
-    
     private lazy var textMessage: UITextField = {
         let view = UITextField()
         view.borderStyle = .roundedRect
@@ -44,16 +39,15 @@ class MessagesController: UIViewController {
         view.font = .systemFont(ofSize: 12, weight: .black)
         return view
     }()
-    
     private lazy var totalView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
         return view
     }()
     
-    override func viewDidLoad() {
+override func viewDidLoad() {
         
-    super.viewDidLoad()
+        super.viewDidLoad()
         
         view.backgroundColor = .black
         
@@ -64,7 +58,6 @@ class MessagesController: UIViewController {
             make.top.equalToSuperview()
             make.bottom.equalToSuperview()
         }
-        
         totalView.addSubview(title1)
         title1.snp.makeConstraints { make in
             make.top.equalToSuperview()
@@ -86,7 +79,6 @@ class MessagesController: UIViewController {
             make.right.equalToSuperview().offset(-20)
             make.bottom.equalToSuperview().offset(-10)
             make.height.equalTo(30)
-            
         }
     }
     @objc func clickBack(sender: UIButton){

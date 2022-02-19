@@ -12,7 +12,6 @@ import SnapKit
 class HelpController: UIViewController{
     private lazy var scrollView = UIScrollView()
     private lazy var HelpLayout = UIView()
-  
     private lazy var clickBack: UIButton = {
         let view = UIButton()
         view.backgroundColor = .white
@@ -21,21 +20,20 @@ class HelpController: UIViewController{
         view.addTarget(self, action: #selector(clickRegister(view:)), for: .touchUpInside)
         return view
     }()
-    
     private lazy var HelpText: UILabel = {
-      let view = UILabel()
-      view.textColor = .black
-      view.text = "Для входа приложения 'Telegram' сначала прочтите условия о соглашении.\n\nСледующий шаг - вам нужно пройти простую регистрацию.\n\nНаслаждайтесь использованием нашего приложения"
+        let view = UILabel()
+        view.textColor = .black
+        view.text = "Для входа приложения 'Telegram' сначала прочтите условия о соглашении.\n\nСледующий шаг - вам нужно пройти простую регистрацию.\n\nНаслаждайтесь использованием нашего приложения"
         view.numberOfLines = 0
-      return view
+        return view
     }()
     @objc func clickRegister(view: UIButton){
         navigationController?.popToRootViewController(animated: true)
     }
-   
-    override func viewDidLoad() {
-        
+
+override func viewDidLoad() {
         view.backgroundColor = .white
+
         view.addSubview(HelpLayout)
         HelpLayout.snp.makeConstraints { make in
             make.top.equalToSuperview()
@@ -43,7 +41,6 @@ class HelpController: UIViewController{
             make.right.equalToSuperview().offset(-16)
             make.height.equalTo(200)
         }
-                
         HelpLayout.addSubview(HelpText)
         HelpText.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(20)
@@ -51,7 +48,6 @@ class HelpController: UIViewController{
             make.width.equalToSuperview()
             
         }
-        
         view.addSubview(scrollView)
         scrollView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
